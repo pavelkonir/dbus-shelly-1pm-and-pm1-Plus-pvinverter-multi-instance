@@ -1,9 +1,5 @@
 # dbus-shelly-1pm-pvinverter and shelly pm 1 plus multi-instance
-Integrate Shelly 1PM and shelly pm 1 plus into Victron Energies Venus OS
-
-PM1 = https://youtu.be/ki9uB-DL8lA
-
-PM1 PLUS = https://youtu.be/4lI5X2ZwxUE
+Integrate Shelly 1PM, shelly pm 1 plus and shelly pm mini plus into Victron Energies Venus OS
 
 ## Purpose
 With the scripts in this repo it should be easy possible to install, uninstall, restart a service that connects the Shelly 1PM to the VenusOS and GX devices from Victron.
@@ -12,10 +8,8 @@ Idea is inspired on @fabian-lauer project linked below.
 
 
 ## Inspiration
-This project is my first on GitHub and with the Victron Venus OS, so I took some ideas and approaches from the following projects - many thanks for sharing the knowledge:
-- https://github.com/fabian-lauer/dbus-shelly-3em-smartmeter
-- https://shelly-api-docs.shelly.cloud/gen1/#shelly1-shelly1pm
-- https://github.com/victronenergy/venus/wiki/dbus#pv-inverters
+This project is fork from https://github.com/Halmand/dbus-shelly-1pm-and-pm1-Plus-pvinverter-multi-instance
+
 
 ### Details / Process
 As mentioned above the script is inspired by @fabian-lauer dbus-shelly-3em-smartmeter implementation.
@@ -110,14 +104,3 @@ instace 3
 /data/dbus-shelly-1pm-pvinverter03/uninstall.sh
 rm -r /data/dbus-shelly-1pm-pvinverter03
 ```
-
-
-## Used documentation
-- https://github.com/victronenergy/venus/wiki/dbus#pv-inverters   DBus paths for Victron namespace
-- https://github.com/victronenergy/venus/wiki/dbus-api   DBus API from Victron
-- https://www.victronenergy.com/live/ccgx:root_access   How to get root access on GX device/Venus OS
-- https://shelly-api-docs.shelly.cloud/gen1/#shelly1-shelly1pm Shelly API documentation
-
-## Discussions on the web
-This module/repository has been posted on the following threads:
-- https://community.victronenergy.com/questions/127339/shelly-1pm-as-pv-inverter-in-venusos.html
